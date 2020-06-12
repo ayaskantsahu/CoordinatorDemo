@@ -18,10 +18,10 @@ class RedViewController: UIViewController {
     
     var greenButton: UIButton = {
         var button = UIButton(type: .roundedRect)
-        button.backgroundColor = .systemTeal
+        button.backgroundColor = .systemYellow
         button.setTitleColor(.black, for: .normal)
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.setTitle("Naviage to green", for: .normal)
+        button.setTitle("Tap Me", for: .normal)
         return button
     }()
     
@@ -41,7 +41,7 @@ class RedViewController: UIViewController {
         greenButton.addTarget(self, action: #selector(self.buttonTapped), for: .touchUpInside)
         greenButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         greenButton.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
-        greenButton.heightAnchor.constraint(equalToConstant: 22).isActive = true
+        greenButton.heightAnchor.constraint(equalToConstant: 32).isActive = true
     }
     
     @objc func buttonTapped(sender : UIButton) {
