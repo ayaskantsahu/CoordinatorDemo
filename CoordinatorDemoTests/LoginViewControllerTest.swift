@@ -9,26 +9,26 @@
 import XCTest
 @testable import CoordinatorDemo
 
-class MockDelegate: RedViewControllerDelegate {
-    func navigateToGreen() {
+class MockDelegate: LoginViewControllerDelegate {
+    func onLoginTapped() {
         XCTAssert(true)
     }
 }
 
 class RedViewControllerTest: XCTestCase {
 
-    var redViewController: RedViewController?
+    var loginViewController: LoginViewController?
     
     override func setUpWithError() throws {
-        redViewController = RedViewController(coordinator: MockDelegate())
+        loginViewController = LoginViewController(coordinator: MockDelegate())
     }
 
     override func tearDownWithError() throws {
-        redViewController = nil
+        loginViewController = nil
     }
 
     func testNavigationOnButtonTap() throws {
-        redViewController?.buttonTapped(sender: redViewController?.greenButton ?? UIButton())
+        loginViewController?.onLoginTapped(sender: loginViewController?.loginButton ?? UIButton())
     }
 
 }

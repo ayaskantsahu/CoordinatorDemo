@@ -9,16 +9,20 @@
 /* Begin PBXBuildFile section */
 		0A98E91B2492DA4500D2C317 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A98E91A2492DA4500D2C317 /* AppDelegate.swift */; };
 		0A98E91D2492DA4500D2C317 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A98E91C2492DA4500D2C317 /* SceneDelegate.swift */; };
-		0A98E91F2492DA4500D2C317 /* RedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A98E91E2492DA4500D2C317 /* RedViewController.swift */; };
 		0A98E9242492DA4600D2C317 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A98E9232492DA4600D2C317 /* Assets.xcassets */; };
 		0A98E9272492DA4600D2C317 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A98E9252492DA4600D2C317 /* LaunchScreen.storyboard */; };
 		0A98E9432492DBC300D2C317 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A98E9422492DBC300D2C317 /* Coordinator.swift */; };
-		0A98E9472492E31300D2C317 /* RedCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A98E9462492E31300D2C317 /* RedCoordinator.swift */; };
-		0A98E9492492E32300D2C317 /* BlueCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A98E9482492E32300D2C317 /* BlueCoordinator.swift */; };
-		0A98E94B2492E44900D2C317 /* BlueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A98E94A2492E44900D2C317 /* BlueViewController.swift */; };
 		0A98E94D2492F72600D2C317 /* TabCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A98E94C2492F72600D2C317 /* TabCoordinator.swift */; };
-		0A98E94F24931F4100D2C317 /* GreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A98E94E24931F4100D2C317 /* GreenViewController.swift */; };
-		0A98E9512493268500D2C317 /* RedViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A98E9502493268500D2C317 /* RedViewControllerTest.swift */; };
+		0A98E9512493268500D2C317 /* LoginViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A98E9502493268500D2C317 /* LoginViewControllerTest.swift */; };
+		0A98E959249C234200D2C317 /* OnboardingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A98E958249C234200D2C317 /* OnboardingCoordinator.swift */; };
+		0A98E95B24A2B58800D2C317 /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A98E95A24A2B58800D2C317 /* LoginCoordinator.swift */; };
+		0A98E95D24A2B59A00D2C317 /* SignupCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A98E95C24A2B59A00D2C317 /* SignupCoordinator.swift */; };
+		0A98E95F24A2B5F600D2C317 /* TutorialCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A98E95E24A2B5F600D2C317 /* TutorialCoordinator.swift */; };
+		0A98E96224A2B7F900D2C317 /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A98E96124A2B7F900D2C317 /* LandingViewController.swift */; };
+		0A98E96524A2B93F00D2C317 /* EmailRegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A98E96424A2B93F00D2C317 /* EmailRegistrationViewController.swift */; };
+		0A98E96824A2BA1B00D2C317 /* EnterCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A98E96724A2BA1B00D2C317 /* EnterCodeViewController.swift */; };
+		0A98E96A24A2BBD500D2C317 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A98E96924A2BBD500D2C317 /* LoginViewController.swift */; };
+		0A98E96D24A2BBF100D2C317 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A98E96C24A2BBF100D2C317 /* TutorialViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,19 +39,23 @@
 		0A98E9172492DA4500D2C317 /* CoordinatorDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoordinatorDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A98E91A2492DA4500D2C317 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0A98E91C2492DA4500D2C317 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0A98E91E2492DA4500D2C317 /* RedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedViewController.swift; sourceTree = "<group>"; };
 		0A98E9232492DA4600D2C317 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A98E9262492DA4600D2C317 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A98E9282492DA4600D2C317 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A98E92D2492DA4600D2C317 /* CoordinatorDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoordinatorDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A98E9332492DA4600D2C317 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A98E9422492DBC300D2C317 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
-		0A98E9462492E31300D2C317 /* RedCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedCoordinator.swift; sourceTree = "<group>"; };
-		0A98E9482492E32300D2C317 /* BlueCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueCoordinator.swift; sourceTree = "<group>"; };
-		0A98E94A2492E44900D2C317 /* BlueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueViewController.swift; sourceTree = "<group>"; };
 		0A98E94C2492F72600D2C317 /* TabCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabCoordinator.swift; sourceTree = "<group>"; };
-		0A98E94E24931F4100D2C317 /* GreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenViewController.swift; sourceTree = "<group>"; };
-		0A98E9502493268500D2C317 /* RedViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedViewControllerTest.swift; sourceTree = "<group>"; };
+		0A98E9502493268500D2C317 /* LoginViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewControllerTest.swift; sourceTree = "<group>"; };
+		0A98E958249C234200D2C317 /* OnboardingCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCoordinator.swift; sourceTree = "<group>"; };
+		0A98E95A24A2B58800D2C317 /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
+		0A98E95C24A2B59A00D2C317 /* SignupCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupCoordinator.swift; sourceTree = "<group>"; };
+		0A98E95E24A2B5F600D2C317 /* TutorialCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialCoordinator.swift; sourceTree = "<group>"; };
+		0A98E96124A2B7F900D2C317 /* LandingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
+		0A98E96424A2B93F00D2C317 /* EmailRegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailRegistrationViewController.swift; sourceTree = "<group>"; };
+		0A98E96724A2BA1B00D2C317 /* EnterCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterCodeViewController.swift; sourceTree = "<group>"; };
+		0A98E96924A2BBD500D2C317 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		0A98E96C24A2BBF100D2C317 /* TutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				0A98E9332492DA4600D2C317 /* Info.plist */,
-				0A98E9502493268500D2C317 /* RedViewControllerTest.swift */,
+				0A98E9502493268500D2C317 /* LoginViewControllerTest.swift */,
 			);
 			path = CoordinatorDemoTests;
 			sourceTree = "<group>";
@@ -121,29 +129,65 @@
 		0A98E93F2492DB3800D2C317 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				0A98E9412492DB5500D2C317 /* Red */,
-				0A98E9402492DB3F00D2C317 /* Blue */,
+				0A98E96E24A3D71600D2C317 /* Onboarding */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
 		};
-		0A98E9402492DB3F00D2C317 /* Blue */ = {
+		0A98E957249C230700D2C317 /* Coordinators */ = {
 			isa = PBXGroup;
 			children = (
-				0A98E9482492E32300D2C317 /* BlueCoordinator.swift */,
-				0A98E94A2492E44900D2C317 /* BlueViewController.swift */,
+				0A98E958249C234200D2C317 /* OnboardingCoordinator.swift */,
+				0A98E95A24A2B58800D2C317 /* LoginCoordinator.swift */,
+				0A98E95C24A2B59A00D2C317 /* SignupCoordinator.swift */,
+				0A98E95E24A2B5F600D2C317 /* TutorialCoordinator.swift */,
 			);
-			path = Blue;
+			path = Coordinators;
 			sourceTree = "<group>";
 		};
-		0A98E9412492DB5500D2C317 /* Red */ = {
+		0A98E96024A2B6DA00D2C317 /* Landing */ = {
 			isa = PBXGroup;
 			children = (
-				0A98E9462492E31300D2C317 /* RedCoordinator.swift */,
-				0A98E91E2492DA4500D2C317 /* RedViewController.swift */,
-				0A98E94E24931F4100D2C317 /* GreenViewController.swift */,
+				0A98E96124A2B7F900D2C317 /* LandingViewController.swift */,
 			);
-			path = Red;
+			path = Landing;
+			sourceTree = "<group>";
+		};
+		0A98E96324A2B80700D2C317 /* Signup */ = {
+			isa = PBXGroup;
+			children = (
+				0A98E96424A2B93F00D2C317 /* EmailRegistrationViewController.swift */,
+				0A98E96724A2BA1B00D2C317 /* EnterCodeViewController.swift */,
+			);
+			path = Signup;
+			sourceTree = "<group>";
+		};
+		0A98E96624A2B94500D2C317 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				0A98E96924A2BBD500D2C317 /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		0A98E96B24A2BBD900D2C317 /* Tutorial */ = {
+			isa = PBXGroup;
+			children = (
+				0A98E96C24A2BBF100D2C317 /* TutorialViewController.swift */,
+			);
+			path = Tutorial;
+			sourceTree = "<group>";
+		};
+		0A98E96E24A3D71600D2C317 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				0A98E957249C230700D2C317 /* Coordinators */,
+				0A98E96024A2B6DA00D2C317 /* Landing */,
+				0A98E96324A2B80700D2C317 /* Signup */,
+				0A98E96624A2B94500D2C317 /* Login */,
+				0A98E96B24A2BBD900D2C317 /* Tutorial */,
+			);
+			path = Onboarding;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,15 +290,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A98E94F24931F4100D2C317 /* GreenViewController.swift in Sources */,
+				0A98E96824A2BA1B00D2C317 /* EnterCodeViewController.swift in Sources */,
 				0A98E94D2492F72600D2C317 /* TabCoordinator.swift in Sources */,
-				0A98E91F2492DA4500D2C317 /* RedViewController.swift in Sources */,
 				0A98E91B2492DA4500D2C317 /* AppDelegate.swift in Sources */,
-				0A98E9472492E31300D2C317 /* RedCoordinator.swift in Sources */,
-				0A98E9492492E32300D2C317 /* BlueCoordinator.swift in Sources */,
+				0A98E95D24A2B59A00D2C317 /* SignupCoordinator.swift in Sources */,
+				0A98E95F24A2B5F600D2C317 /* TutorialCoordinator.swift in Sources */,
+				0A98E95B24A2B58800D2C317 /* LoginCoordinator.swift in Sources */,
+				0A98E96224A2B7F900D2C317 /* LandingViewController.swift in Sources */,
+				0A98E96D24A2BBF100D2C317 /* TutorialViewController.swift in Sources */,
 				0A98E9432492DBC300D2C317 /* Coordinator.swift in Sources */,
-				0A98E94B2492E44900D2C317 /* BlueViewController.swift in Sources */,
+				0A98E96A24A2BBD500D2C317 /* LoginViewController.swift in Sources */,
+				0A98E96524A2B93F00D2C317 /* EmailRegistrationViewController.swift in Sources */,
 				0A98E91D2492DA4500D2C317 /* SceneDelegate.swift in Sources */,
+				0A98E959249C234200D2C317 /* OnboardingCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,7 +310,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A98E9512493268500D2C317 /* RedViewControllerTest.swift in Sources */,
+				0A98E9512493268500D2C317 /* LoginViewControllerTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
