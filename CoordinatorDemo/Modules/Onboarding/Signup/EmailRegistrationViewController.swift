@@ -44,6 +44,12 @@ class EmailRegistrationViewController: UIViewController {
         super.init(nibName: nil, bundle: nil)
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        if (self.isMovingFromParent || self.isBeingDismissed) {
+            coordinator?.goBack()
+        }
+    }
+    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }

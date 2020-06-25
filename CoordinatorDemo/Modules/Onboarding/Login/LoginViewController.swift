@@ -10,6 +10,7 @@ import UIKit
 
 protocol LoginViewControllerDelegate: class {
     func onLoginTapped()
+    func goBack()
 }
 
 class LoginViewController: UIViewController {
@@ -40,6 +41,12 @@ class LoginViewController: UIViewController {
     init(coordinator: LoginViewControllerDelegate) {
         self.coordinator = coordinator
         super.init(nibName: nil, bundle: nil)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        if (self.isMovingFromParent || self.isBeingDismissed) {
+            coordinator?.goBack()
+        }
     }
     
     required init?(coder: NSCoder) {

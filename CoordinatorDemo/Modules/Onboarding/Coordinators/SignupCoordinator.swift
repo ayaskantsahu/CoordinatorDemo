@@ -33,7 +33,6 @@ class SignupCoordinator: Coordinator {
 
 extension SignupCoordinator: EmailRegistrationViewControllerDelegate {
     func goBack() {
-        navigationController?.popViewController(animated: true)
         parentCoordinator?.removeChildCoordinator(self)
     }
     
@@ -53,6 +52,5 @@ extension SignupCoordinator: EnterCodeViewControllerDelegate {
         parentCoordinator?.removeChildCoordinator(self)
         parentCoordinator?.onSignupComplete()
     }
-    
     
 }

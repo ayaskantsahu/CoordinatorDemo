@@ -33,4 +33,8 @@ extension LoginCoordinator: LoginViewControllerDelegate {
         parentCoordinator?.removeChildCoordinator(self)
         parentCoordinator?.onLoginComplete()
     }
+    
+    func goBack() {
+        parentCoordinator?.removeChildCoordinator(self)
+    }
 }
