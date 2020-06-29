@@ -11,14 +11,19 @@ import UIKit
 
 class OnboardingCoordinator: Coordinator {
     var childCoordinators: [Coordinator] = []
-    
+    weak var parentCoordinator: AppCoordinator?
     var navigationController: UINavigationController?
     var rootViewController: UIViewController?
+    
+    init(parentCoordinator: AppCoordinator, navigationController: UINavigationController?) {
+        self.parentCoordinator = parentCoordinator
+        self.navigationController = navigationController
+    }
     
     func start() {
         let vc = LandingViewController(coordinator: self)
         rootViewController = vc
-        navigationController = UINavigationController(rootViewController: vc)
+        navigationController?.setViewControllers([vc], animated: true)
     }
     
     func onLoginComplete() {
@@ -37,7 +42,8 @@ class OnboardingCoordinator: Coordinator {
     }
     
     func onOnboardingComplete() {
-        
+        parentCoordinator?.removeChildCoordinator(self)
+        parentCoordinator?.onOnboardingComplete()
     }
     
 }

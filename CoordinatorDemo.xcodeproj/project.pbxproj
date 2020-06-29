@@ -23,6 +23,12 @@
 		0A98E96824A2BA1B00D2C317 /* EnterCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A98E96724A2BA1B00D2C317 /* EnterCodeViewController.swift */; };
 		0A98E96A24A2BBD500D2C317 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A98E96924A2BBD500D2C317 /* LoginViewController.swift */; };
 		0A98E96D24A2BBF100D2C317 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A98E96C24A2BBF100D2C317 /* TutorialViewController.swift */; };
+		0A98E9B224A575D200D2C317 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A98E9B124A575D200D2C317 /* HomeViewController.swift */; };
+		0A98E9B424A575DE00D2C317 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A98E9B324A575DE00D2C317 /* SearchViewController.swift */; };
+		0A98E9B624A57A2100D2C317 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A98E9B524A57A2100D2C317 /* HomeCoordinator.swift */; };
+		0A98E9B824A57A2E00D2C317 /* SearchCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A98E9B724A57A2E00D2C317 /* SearchCoordinator.swift */; };
+		0A98E9BA24AA4FC600D2C317 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A98E9B924AA4FC600D2C317 /* AppCoordinator.swift */; };
+		0A98E9BC24AA60EB00D2C317 /* Modal2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A98E9BB24AA60EB00D2C317 /* Modal2ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +62,12 @@
 		0A98E96724A2BA1B00D2C317 /* EnterCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterCodeViewController.swift; sourceTree = "<group>"; };
 		0A98E96924A2BBD500D2C317 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		0A98E96C24A2BBF100D2C317 /* TutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
+		0A98E9B124A575D200D2C317 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		0A98E9B324A575DE00D2C317 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		0A98E9B524A57A2100D2C317 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		0A98E9B724A57A2E00D2C317 /* SearchCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCoordinator.swift; sourceTree = "<group>"; };
+		0A98E9B924AA4FC600D2C317 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		0A98E9BB24AA60EB00D2C317 /* Modal2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modal2ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,7 +116,7 @@
 				0A98E9232492DA4600D2C317 /* Assets.xcassets */,
 				0A98E9252492DA4600D2C317 /* LaunchScreen.storyboard */,
 				0A98E9282492DA4600D2C317 /* Info.plist */,
-				0A98E94C2492F72600D2C317 /* TabCoordinator.swift */,
+				0A98E9B924AA4FC600D2C317 /* AppCoordinator.swift */,
 			);
 			path = CoordinatorDemo;
 			sourceTree = "<group>";
@@ -129,6 +141,7 @@
 		0A98E93F2492DB3800D2C317 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				0A98E9AD24A5755F00D2C317 /* Home */,
 				0A98E96E24A3D71600D2C317 /* Onboarding */,
 			);
 			path = Modules;
@@ -188,6 +201,43 @@
 				0A98E96B24A2BBD900D2C317 /* Tutorial */,
 			);
 			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		0A98E9AD24A5755F00D2C317 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				0A98E9B024A575B200D2C317 /* Search */,
+				0A98E9AF24A575A600D2C317 /* Home */,
+				0A98E9AE24A5757C00D2C317 /* Coordinators */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		0A98E9AE24A5757C00D2C317 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				0A98E94C2492F72600D2C317 /* TabCoordinator.swift */,
+				0A98E9B524A57A2100D2C317 /* HomeCoordinator.swift */,
+				0A98E9B724A57A2E00D2C317 /* SearchCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		0A98E9AF24A575A600D2C317 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				0A98E9B124A575D200D2C317 /* HomeViewController.swift */,
+				0A98E9BB24AA60EB00D2C317 /* Modal2ViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		0A98E9B024A575B200D2C317 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				0A98E9B324A575DE00D2C317 /* SearchViewController.swift */,
+			);
+			path = Search;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,10 +340,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A98E9B424A575DE00D2C317 /* SearchViewController.swift in Sources */,
 				0A98E96824A2BA1B00D2C317 /* EnterCodeViewController.swift in Sources */,
+				0A98E9B224A575D200D2C317 /* HomeViewController.swift in Sources */,
 				0A98E94D2492F72600D2C317 /* TabCoordinator.swift in Sources */,
 				0A98E91B2492DA4500D2C317 /* AppDelegate.swift in Sources */,
 				0A98E95D24A2B59A00D2C317 /* SignupCoordinator.swift in Sources */,
+				0A98E9BA24AA4FC600D2C317 /* AppCoordinator.swift in Sources */,
 				0A98E95F24A2B5F600D2C317 /* TutorialCoordinator.swift in Sources */,
 				0A98E95B24A2B58800D2C317 /* LoginCoordinator.swift in Sources */,
 				0A98E96224A2B7F900D2C317 /* LandingViewController.swift in Sources */,
@@ -301,7 +354,10 @@
 				0A98E9432492DBC300D2C317 /* Coordinator.swift in Sources */,
 				0A98E96A24A2BBD500D2C317 /* LoginViewController.swift in Sources */,
 				0A98E96524A2B93F00D2C317 /* EmailRegistrationViewController.swift in Sources */,
+				0A98E9B624A57A2100D2C317 /* HomeCoordinator.swift in Sources */,
+				0A98E9BC24AA60EB00D2C317 /* Modal2ViewController.swift in Sources */,
 				0A98E91D2492DA4500D2C317 /* SceneDelegate.swift in Sources */,
+				0A98E9B824A57A2E00D2C317 /* SearchCoordinator.swift in Sources */,
 				0A98E959249C234200D2C317 /* OnboardingCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

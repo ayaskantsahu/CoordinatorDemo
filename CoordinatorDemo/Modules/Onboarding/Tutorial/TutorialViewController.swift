@@ -16,12 +16,13 @@ class TutorialViewController: UIViewController {
 
     weak var coordinator: TutorialViewControllerDelegate?
     
-    var finishLabel: UILabel = {
-        let label = UILabel(frame: .zero)
-        label.backgroundColor = .systemBackground
-        label.text = "Thank you for finishing coordinator demo"
-        label.translatesAutoresizingMaskIntoConstraints = false
-        return label
+    var homeButton: UIButton = {
+        let button = UIButton(frame: CGRect(x: 100, y: 100, width: 100, height: 50))
+        button.backgroundColor = .systemBlue
+        button.setTitle("Go home", for: .normal)
+        button.addTarget(self, action: #selector(onHomeTapped), for: .touchUpInside)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        return button
     }()
     
     override func viewDidLoad() {
@@ -30,10 +31,10 @@ class TutorialViewController: UIViewController {
         // Do any additional setup after loading the view.
         view.backgroundColor = .systemBackground
         navigationItem.title = "Tutorial Page"
-        view.addSubview(finishLabel)
+        view.addSubview(homeButton)
         
-        finishLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        finishLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+        homeButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        homeButton.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
     }
     
     init(coordinator: TutorialViewControllerDelegate) {
@@ -43,6 +44,10 @@ class TutorialViewController: UIViewController {
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    @objc func onHomeTapped(sender: UIButton!) {
+        coordinator?.onTutorialDone()
     }
 
 }
